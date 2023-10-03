@@ -10,13 +10,41 @@ window.addEventListener("load", () => {
   });
 });
 
-const section = document.querySelector(".section-1");
-const option = {};
+const sections = document.querySelectorAll(".content-box");
+const option = {
+  root: null,
+  threshold: 0.65,
+  rootMargin: "-50px ",
+};
 
 const observer = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
-    alert(entry.target);
+    if (!entry.isIntersecting) {
+      return;
+    }
+
+    console.log(entry.target);
+
+    intersectionHandler(entry);
   });
 }, option);
 
-observer.observe(section);
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
+function intersectionHandler(entry) {
+  const id = entry.target.id;
+
+  const shouldActive = document.querySelector("nav a.nav-link--active");
+
+  const currentActive = document.querySelector("nav a[data-ref=" + id + "]");
+
+  if (currentActive) {
+    currentActive.classList.add("nav-link--active");
+  }
+
+  if (shouldActive) {
+    shouldActive.classList.remove("nav-link--active");
+  }
+}
