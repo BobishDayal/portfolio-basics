@@ -8,30 +8,13 @@ window.addEventListener("load", () => {
   });
 });
 
-const sections = document.querySelectorAll("div.content-box");
+// const sections = document.querySelectorAll(".content-box");
+// const options = {};
+// const observer = new IntersectionObserver(function (enteries, observer) {
+//   enteries.forEach((entry) => {
+//     console.log(entry);
+//   });
+// });
 
-const config = {
-  rootMargin: "-50px,0px,-50%",
-};
-
-const observer = new IntersectionObserver(function (entries, self) {
-  entries.forEach((entry) => {
-    console.log(entry);
-    if (entry.isIntersecting) {
-      intersectionHandler(entry);
-    }
-  });
-}, config);
-
-sections.forEach((section) => {
-  observer.observe(section);
-});
-
-function intersectionHandler(entry) {
-  const id = entry.target.value;
-  const currentlyActive = document.querySelector("nav li.active");
-
-  if (currentlyActive) {
-    currentlyActive.classList.add(".nav-link--active");
-  }
-}
+// observer.observe(sections);
+console.log("hello");
