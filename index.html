@@ -17,7 +17,7 @@
      <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Kaushan Script">
 
-          <script src="script.js" defer></script>
+          <script src="script.js" ></script>
   </head>
   <body>
 
@@ -54,7 +54,7 @@
     </header>
 
     <content>
-      <div class="content-box" id="about">
+      <div class="content-box section-1" id="about">
         <h1 class="main-heading">Bobish dayal</h1>
         <h3 class="sub-heading">frontend, UX/UI developer</h3>
         <div class="description">
@@ -143,11 +143,11 @@
         <div class="form-container">
             <form action="https://formsubmit.co/bobishdayal@gmail.com" method="POST">
                 <label for="name">Name</label>
-                <input type="text" placeholder="Your name.." id="name" required/>
+                <input id="name" type="text" placeholder="Your name.."  autocomplete="given-name" required/>
                 <label for="email">Mail</label>
-                <input type="text" placeholder="Your Email.." id="name" required />
-                <label for="subject">Your Message</label>
-                <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                <input id="email" type="text" placeholder="Your Email.."  autocomplete="email" required />
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px" autocomplete="off"></textarea>
                 <input type="submit" value="Submit">
               </form>
 

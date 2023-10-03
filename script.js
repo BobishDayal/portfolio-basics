@@ -1,3 +1,5 @@
+"use strict";
+
 window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
 
@@ -8,13 +10,13 @@ window.addEventListener("load", () => {
   });
 });
 
-// const sections = document.querySelectorAll(".content-box");
-// const options = {};
-// const observer = new IntersectionObserver(function (enteries, observer) {
-//   enteries.forEach((entry) => {
-//     console.log(entry);
-//   });
-// });
+const section = document.querySelector(".section-1");
+const option = {};
 
-// observer.observe(sections);
-console.log("hello");
+const observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    console.log(entry);
+  });
+}, option);
+
+observer.observe(section);
