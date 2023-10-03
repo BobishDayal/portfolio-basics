@@ -23,8 +23,6 @@ const observer = new IntersectionObserver(function (entries, observer) {
       return;
     }
 
-    console.log(entry.target);
-
     intersectionHandler(entry);
   });
 }, option);
