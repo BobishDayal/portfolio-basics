@@ -76,7 +76,7 @@ html {
   color: rgb(255, 255, 255);
   scale: 1.2;
 }
-.nav-link--active {
+.active {
   color: rgb(255, 255, 255);
   scale: 1.2;
 }
@@ -119,12 +119,14 @@ input[type="checkbox"] {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Bebas Neue";
+  opacity: 0;
 }
 
-.animated-heading {
-  animation-name: resizing;
+.main-heading.animated {
+  animation-name: reposition;
   animation-duration: 1s;
   animation-timing-function: ease-in;
+  opacity: 1;
 }
 
 .sub-heading {
@@ -391,10 +393,6 @@ textarea {
   .main-heading {
     font-size: 4rem;
     margin-bottom: 2rem;
-
-    animation-name: reposition;
-    animation-duration: 0.8s;
-    animation-timing-function: ease;
   }
 
   .sub-heading {
@@ -465,10 +463,6 @@ textarea {
 
   .main-heading {
     font-size: 4rem;
-
-    animation-name: reposition;
-    animation-duration: 0.8s;
-    animation-timing-function: ease;
   }
 
   .sub-heading {
@@ -585,10 +579,6 @@ textarea {
 
   .main-heading {
     font-size: 4rem;
-
-    animation-name: resizing;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
   }
 
   .sub-heading {

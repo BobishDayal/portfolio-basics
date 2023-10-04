@@ -11,9 +11,10 @@ window.addEventListener("load", () => {
 });
 
 const sections = document.querySelectorAll(".content-box");
+
 const option = {
   root: null,
-  threshold: 0.65,
+  threshold: 0.2,
   rootMargin: "-50px ",
 };
 
@@ -34,17 +35,18 @@ sections.forEach((section) => {
 function intersectionHandler(entry) {
   const id = entry.target.id;
 
-  const shouldActive = document.querySelector("nav a.nav-link--active");
-  const activeHeading = document.querySelector(`main-heading ${id}`);
+  const shouldActive = document.querySelector("nav a.active");
+  const activeHeading = entry.target.querySelector(".main-heading");
 
   const currentActive = document.querySelector("nav a[data-ref=" + id + "]");
+  console.log(activeHeading);
 
   if (currentActive) {
-    currentActive.classList.add("nav-link--active");
-    activeHeading.classList.add("animated-heading");
+    currentActive.classList.add("active");
+    activeHeading.classList.add("animated");
   }
 
   if (shouldActive) {
-    shouldActive.classList.remove("nav-link--active");
+    shouldActive.classList.remove("active");
   }
 }
