@@ -264,7 +264,7 @@ textarea {
   font-size: 2.5rem;
   font-weight: bold;
   padding-top: 1rem;
-  margin: 2rem;
+  margin: auto;
   font-weight: bold;
   font-family: "Bebas Neue";
 
@@ -416,6 +416,10 @@ textarea {
 
   .form-container {
     width: 100%;
+  }
+
+  .detail-heading {
+    font-size: 3rem;
   }
 }
 
