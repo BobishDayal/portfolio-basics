@@ -74,11 +74,11 @@ html {
 
 .nav-link:hover {
   color: rgb(255, 255, 255);
-  scale: 1.5;
+  scale: 1.2;
 }
 .nav-link--active {
   color: rgb(255, 255, 255);
-  scale: 1.5;
+  scale: 1.2;
 }
 
 .icons {
@@ -119,6 +119,12 @@ input[type="checkbox"] {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Bebas Neue";
+}
+
+.animatedHeading {
+  animation-name: resizing;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
 }
 
 .sub-heading {
@@ -201,7 +207,6 @@ input[type="checkbox"] {
   justify-content: center;
   align-items: center;
   width: 50vw;
-  padding: 1rem;
 }
 
 .form-container label {
@@ -245,11 +250,8 @@ textarea {
   width: 40%;
   height: 100%;
   margin-left: 4rem;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 
   display: flex;
   flex-direction: column;
@@ -418,7 +420,6 @@ textarea {
 
   .form-container {
     width: 100%;
-    padding: 1rem;
   }
 }
 
@@ -441,12 +442,8 @@ textarea {
     animation-timing-function: ease;
   }
 
-  .nav-link:hover {
-    font-size: 0.9rem;
-  }
-
   .nav-link {
-    margin-right: 1rem;
+    margin-right: 1.2rem;
   }
 
   .nav a {
@@ -503,7 +500,6 @@ textarea {
 
   .form-container {
     width: 100%;
-    padding: 1rem;
   }
 
   .social {
@@ -565,10 +561,6 @@ textarea {
     padding: 0.5rem;
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.776);
-  }
-
-  .nav-link:hover {
-    font-size: 0.9rem;
   }
 
   .profile-image {
