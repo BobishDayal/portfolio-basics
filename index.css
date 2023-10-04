@@ -121,7 +121,7 @@ input[type="checkbox"] {
   font-family: "Bebas Neue";
 }
 
-.animatedHeading {
+.animated-heading {
   animation-name: resizing;
   animation-duration: 1s;
   animation-timing-function: ease-in;

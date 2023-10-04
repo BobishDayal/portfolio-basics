@@ -35,11 +35,13 @@ function intersectionHandler(entry) {
   const id = entry.target.id;
 
   const shouldActive = document.querySelector("nav a.nav-link--active");
+  const activeHeading = document.querySelector(`main-heading ${id}`);
 
   const currentActive = document.querySelector("nav a[data-ref=" + id + "]");
 
   if (currentActive) {
     currentActive.classList.add("nav-link--active");
+    activeHeading.classList.add("animated-heading");
   }
 
   if (shouldActive) {
