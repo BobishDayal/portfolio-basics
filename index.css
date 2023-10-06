@@ -11,6 +11,10 @@ body {
   overflow-y: scroll;
 }
 
+.dark-mode {
+  background: #2d2d2ded;
+}
+
 html {
   scroll-behavior: smooth;
 }
