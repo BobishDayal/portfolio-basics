@@ -50,3 +50,23 @@ function intersectionHandler(entry) {
     shouldActive.classList.remove("active");
   }
 }
+
+const darkThemeButton = document.querySelector(".toggle");
+
+darkThemeButton.addEventListener("click", darkMode);
+
+function darkMode() {
+  darkThemeButton.checked
+    ? document.body.classList.add("dark-mode")
+    : document.body.classList.remove("dark-mode");
+
+  localStorage.setItem("darkMode", darkThemeButton.checked);
+}
+
+window.addEventListener("load", (event) => {
+  if (localStorage.getItem("darkMode") === "true") {
+    document.body.classList.add("dark-mode");
+
+    darkThemeButton.checked = true;
+  }
+});
