@@ -20,7 +20,7 @@ Hey there..!! It is my portfolio website made using only HTML, CSS & JavaScript,
 
 ![contact secion represention (light-mode)](./assets/screenshots/Screenshot%202023-10-11%20151010.png)
 
-![skill section representation (Dark-mode)](./assets/screenshots/Screenshot%202023-10-11%20150903.png)
+![skill section representation (Dark-mode)](./assets/screenshots/Screenshot%202023-10-11%20151038.png)
 
 ## Technologies
 
